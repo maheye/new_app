@@ -10,14 +10,10 @@ I developed the software using VS Code and a C++ compiler. I use Mac terminal to
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
-
 - [W3 Schools](https://www.w3schools.com/cpp/)
 - [Stack Overflow](https://stackoverflow.com/)
 
 # Future Work
-
-{Make a list of things that you need to fix, improve, and add in the future.}
 
 - Item 1 Enhanced User Interface: Improve the user interface for a more interactive and visually appealing experience.
 - Item 2 Task Categories: Add functionality to categorize tasks, enabling users to group tasks based on different criteria.
