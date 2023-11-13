@@ -1,0 +1,14 @@
+/Users/maheye/Documents/BYU-Idaho/cse310/new_app/fourthGame/bin/Debug/net7.0/analyze
+/Users/maheye/Documents/BYU-Idaho/cse310/new_app/fourthGame/bin/Debug/net7.0/analyze.deps.json
+/Users/maheye/Documents/BYU-Idaho/cse310/new_app/fourthGame/bin/Debug/net7.0/analyze.runtimeconfig.json
+/Users/maheye/Documents/BYU-Idaho/cse310/new_app/fourthGame/bin/Debug/net7.0/analyze.dll
+/Users/maheye/Documents/BYU-Idaho/cse310/new_app/fourthGame/bin/Debug/net7.0/analyze.pdb
+/Users/maheye/Documents/BYU-Idaho/cse310/new_app/fourthGame/obj/Debug/net7.0/analyze.GeneratedMSBuildEditorConfig.editorconfig
+/Users/maheye/Documents/BYU-Idaho/cse310/new_app/fourthGame/obj/Debug/net7.0/analyze.AssemblyInfoInputs.cache
+/Users/maheye/Documents/BYU-Idaho/cse310/new_app/fourthGame/obj/Debug/net7.0/analyze.AssemblyInfo.cs
+/Users/maheye/Documents/BYU-Idaho/cse310/new_app/fourthGame/obj/Debug/net7.0/analyze.csproj.CoreCompileInputs.cache
+/Users/maheye/Documents/BYU-Idaho/cse310/new_app/fourthGame/obj/Debug/net7.0/analyze.dll
+/Users/maheye/Documents/BYU-Idaho/cse310/new_app/fourthGame/obj/Debug/net7.0/refint/analyze.dll
+/Users/maheye/Documents/BYU-Idaho/cse310/new_app/fourthGame/obj/Debug/net7.0/analyze.pdb
+/Users/maheye/Documents/BYU-Idaho/cse310/new_app/fourthGame/obj/Debug/net7.0/analyze.genruntimeconfig.cache
+/Users/maheye/Documents/BYU-Idaho/cse310/new_app/fourthGame/obj/Debug/net7.0/ref/analyze.dll
