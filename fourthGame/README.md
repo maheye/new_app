@@ -12,8 +12,6 @@ Visual Studio served as the primary development environment, offering a robust s
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
-
 - [Microsoft](https://learn.microsoft.com/en-us/dotnet/csharp/)
 - [Stack Overflow](https://stackoverflow.com/)
 
