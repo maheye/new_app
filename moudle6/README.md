@@ -1,32 +1,25 @@
 # Overview
 
-{Important! Do not say in this section that this is college assignment. Talk about what you are trying to accomplish as a software engineer to further your learning.}
+As a software engineer, my goal was to further my learning in R and demonstrate my proficiency in the language. To accomplish this, I developed a software project that focuses on cleaning and preprocessing messy data, handling missing values, and preparing it for analysis
 
-{Provide a description of the software that you wrote to demonstrate the R language.}
-
-{Describe your purpose for writing this software.}
-
-{Provide a link to your YouTube demonstration. It should be a 4-5 minute demo of the software running and a walkthrough of the code. Focus should be on sharing what you learned about the language syntax.}
+The software I wrote is a data preprocessing tool in R. It provides functions for cleaning and preprocessing messy data, handling missing values, and preparing the data for analysis. It incorporates various techniques such as replacing missing values with mean, scaling numerical variables, and converting character vectors to factors. The software works with data frames and utilizes different R data types to process and manipulate the data.
 
 [Software Demo Video](http://youtube.link.goes.here)
 
 # Development Environment
 
-{Describe the tools that you used to develop the software}
-
-{Describe the programming language that you used and any libraries.}
+IDE: Visual Studio Code (VSCode)
+R Extension: R extension provided by Yuki Ueda for VSCode
+RStudio: Used for debugging and exploring data
+R version: 4.1.1
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
-
-- [Web Site Name](http://url.link.goes.here)
-- [Web Site Name](http://url.link.goes.here)
+- [R Documentation](https://www.rdocumentation.org/)
+- [RStudio Community](https://community.rstudio.com/)
 
 # Future Work
 
-{Make a list of things that you need to fix, improve, and add in the future.}
-
-- Item 1
-- Item 2
-- Item 3
+- Improve the user interface and make the software more user-friendly with interactive features.
+- Expand the functionality to handle more complex data preprocessing tasks.
+- Optimize performance for large datasets.

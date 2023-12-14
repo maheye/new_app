@@ -1,57 +1,100 @@
-# Load necessary libraries
-library(dplyr)
+# Function to clean and preprocess data
+clean_data <- function(data) {
 
-# Function to load data from CSV file
-load_data <- function(file_path) {
-  data <- read.csv(file_path)
-  return(data)
-}
-
-# Function to display summary statistics
-display_summary <- function(data) {
-  summary(data)
-}
-
-# Function to handle missing values
-handle_missing_values <- function(data) {
-  # Replace missing values with mean for numeric columns
-  data_numeric <- data %>% select_if(is.numeric)
-  data[data_numeric] <- lapply(data_numeric, function(x) ifelse(is.na(x), mean(x, na.rm = TRUE), x))
+  # Display output to the screen
+  cat("Cleaning and preprocessing data...\n")
   
-  # Replace missing values with mode for categorical columns
-  data_factor <- data %>% select_if(is.factor)
-  data[data_factor] <- lapply(data_factor, function(x) ifelse(is.na(x), as.character(stats::mode(x)), x))
+  # Use different R datatypes
+  numeric_var <- 10
+
+  character_var <- "Hello"
+
+  logical_var <- TRUE
+
+  vector_var <- c(1, 2, 3)
+
+  matrix_var <- matrix(1:9, nrow = 3, ncol = 3)
   
-  return(data)
+  # Loop that works with lists or arrays
+  for (i in 1:length(vector_var)) {
+
+    cat("Element", i, "of vector_var:", vector_var[i], "\n")
+
+  }
+  
+  # Create a dataframe
+  df <- data.frame(ID = 1:5, Name = c("John", "Jane", "Alice", "Bob", "Eve"), Age = c(25, 30, NA, 40, 35))
+  
+  # Handle missing values in the dataframe
+  df <- df %>% 
+
+    mutate(Age = ifelse(is.na(Age), mean(Age, na.rm = TRUE), Age))
+  
+  # Display the cleaned dataframe
+  cat("\nCleaned dataframe:\n")
+  
+  print(df)
+  
+  # Send a message to the process
+  message("Data cleaning and preprocessing completed!")
+  
+  # Return the cleaned dataframe
+  return(df)
 }
 
-# Function to preprocess data (example: scaling numeric columns)
-preprocess_data <- function(data) {
-  data_numeric <- data %>% select_if(is.numeric)
-  data[data_numeric] <- lapply(data_numeric, function(x) (x - min(x, na.rm = TRUE)) / (max(x, na.rm = TRUE) - min(x, na.rm = TRUE)))
-  return(data)
+# Function to analyze data
+analyze_data <- function(data) {
+
+  # Display output to the screen
+  cat("Analyzing data...\n")
+  
+  # Extract the Name column from the dataframe
+  names <- data$Name
+  
+  # Loop over the names
+  for (name in names) {
+
+    cat("Analyzing", name, "\n")
+
+  }
+  
+  # Perform some analysis on the data
+  # ...
+  
+  # Send a message to the process
+  message("Data analysis completed!")
 }
 
-# Function to save cleaned data to a new CSV file
-save_cleaned_data <- function(data, output_file) {
-  write.csv(data, file = output_file, row.names = FALSE)
+# Function to visualize data
+visualize_data <- function(data) {
+  # Display output to the screen
+  cat("Visualizing data...\n")
+  
+  # Create a scatter plot of Age vs ID
+  plot(data$ID, data$Age, main = "Age vs ID", xlab = "ID", ylab = "Age")
+  
+  # Send a message to the process
+  message("Data visualization completed!")
 }
 
-# Main script
-file_path <- "messy_data.csv"
+# Main function
+run_script <- function() {
 
-# Load data
-data <- load_data(file_path)
+  # Load required libraries
+  library(dplyr)
 
-# Display summary statistics
-display_summary(data)
+  library(ggplot2)
+  
+  # Load and clean data
+  data <- read.csv("data.csv")
 
-# Handle missing values
-data_cleaned <- handle_missing_values(data)
+  cleaned_data <- clean_data(data)
+  
+  # Analyze and visualize the cleaned data
+  analyze_data(cleaned_data)
 
-# Preprocess data
-data_preprocessed <- preprocess_data(data_cleaned)
+  visualize_data(cleaned_data)
+}
 
-# Save cleaned and preprocessed data to a new CSV file
-output_file <- "cleaned_data.csv"
-save_cleaned_data(data_preprocessed, output_file)
+# Call the main function
+run_script()
